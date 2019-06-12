@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnSetAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000FF"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Alarm Kur"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtContinueLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:textColor="#000" />
+
+
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewRadiusShower"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginBottom="11dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textViewAccuracyShower"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewRadiusShower"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="237dp"
+        android:layout_marginBottom="17dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnMapViewSat"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Uydu" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="58dp"
+        android:text="Ayarlar" />
+
+    <Button
+        android:id="@+id/btnLetLocTrack"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="119dp"
+        android:textSize="12dp"
+        android:text="Konum Takibini Bırak" />
+
+
+
+</RelativeLayout>
